@@ -13,8 +13,9 @@ const Calculator = () => {
 
   const calculate = () => {
     setcurrentvalue(
-      eval(currentvalue),
-      toString() /*any error as null or not-valid should be convert into string*/
+      eval(
+        currentvalue
+      ).toString() /*any error as null or not-valid should be convert into string*/
     );
   };
   return (
